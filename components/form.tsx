@@ -219,7 +219,7 @@ export default function Form() {
                     </Combobox.Button>
 
                     {filteredPeople.length > 0 && (
-                      <Combobox.Options className='absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
+                      <Combobox.Options className='absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
                         {filteredPeople.map((category, index) => (
                           <Combobox.Option
                             key={index}
@@ -705,10 +705,6 @@ export default function Form() {
                 </div>
               </div>
             </div>
-
-            <pre className='text-red-900'>
-              Images: {JSON.stringify(watch(), null, 2)}
-            </pre>
           </>
         )}
         {currentStep === 3 && (
@@ -719,7 +715,7 @@ export default function Form() {
       </form>
 
       {/* Navigation */}
-      <div className='mt-8 pt-5'>
+      <div className=' mt-52 pt-5'>
         <div className='flex justify-between'>
           <button
             type='button'
